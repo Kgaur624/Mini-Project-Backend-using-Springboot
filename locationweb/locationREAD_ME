@@ -1,0 +1,44 @@
+In spring MVC application end user can not access the jsp pages directly , everything goes through a controller 
+******************************************************************************************
+I configue the suffix and prefix to let the spring internal view resolver component ,
+this prefix is the location where our jsp pages is stored ( jsp pages is WEB-INF/jsps) so 
+when our web app is running  ,the internal view resolver will look at the location for a prefix and it will use that path  
+
+suffix --> provide the extension
+ *****************************************************************************************
+ http://localhost:8080/showCreate :-
+ {
+ ENTER and see the jsp page 
+ happened:-- request  goes to the tomcat and then the spring container, spring container 
+ route the req to the location controller ,the showCreate method is what is mapped to showCreate URI so it return
+ a createlocation . the internal view resolver of spring will use the following suffix and prefix and it serve
+ the appropriate page
+ 
+ when we create showCreate in the location module , we did not use any app name or web app context  
+ to provide that --> go to sts -> application.properties (location)  -> write (server.context-path=/locationweb)
+ 
+ **************************************************************************************************  
+ 
+ 
+ 
+ first step to expose our locationweb RESTFUL services is to create a controller
+ so we create integration layer which is restful layer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,23 @@
+JFree.org --> it is an open source API provider using which we can create beautiful bar charts,
+pie chart using ChartFactory. 
+we just simply give the dataset, we retrieve data form the DB, hand it over to the JFeechart API 
+will generate the report.
+
+
+Low Level Desgin:-
+from LocationRepository we are going to load a new dataset, ( i will write finder () using HQL to
+come up with the dataset.) within controller i will be using the dataset and i created ReportUtil class 
+which the controller () will call again onces it load the dataset, the dataset will be 
+handover to this utility, the utility will make use of the JFreeChart API and generate the JPEG and return
+
+
+sql queries for reportutil
+select type,count(type) from location group by type
+
+
+
+STEPS:-
+1 add method to the LocationRepository that will load dataset for us,
+2 we create ReportUtility
+3 we create a view (so we are going to create report.jsp)
+

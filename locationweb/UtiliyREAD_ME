@@ -1,0 +1,7 @@
+it is an interface in the spring API EmailSender, and the impl for this interface provided by spring
+and I will create interface EmailUtil it will be implemented by  EmailUtilImpl class and this class is 
+use the Email Sender from spring to send out email.
+ EmailUtil have one method called send email 	
+ *********************************************************************************************
+ https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4Pymht-wTKP840_5wGq6MDMzw5J-DijHZ-U43h8Edg6Ye64rm4n6B3Avq0I9hyx5XRGtcbo7prGW6tUaj-nWdekyiEGaw
+ ************************************************************************************************* 
